@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcvitbd8elagr"]
+
+[ext_resource type="Texture2D" uid="uid://wgvkkrer3dc0" path="res://icon.svg" id="1_fpmoo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sii85"]
+size = Vector2(128, 128)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(367, 260)
+metadata/_edit_group_ = true
+
+[node name="Icon" type="Sprite2D" parent="Area2D"]
+texture = ExtResource("1_fpmoo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_sii85")
